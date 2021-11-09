@@ -23,15 +23,3 @@ release is issued, the version.h file is also updated.
 The tool supports a range of different verification algorithms, including depth-first,
 breadth-first, parallel/multi-core, bounded depth, bitstate search (using Bloom filter
 theory), partial order reduced, and swarm search (using arbitrarily many cpus).
-
-# Installation
-
-From source:
-
-```
-make; sudo cp Src/spin /usr/local/bin
-spin -V
-```
-
-Alternative: https://spinroot.com/spin/Man/README.html
-
