@@ -201,7 +201,7 @@ We can do that as follows:
 
 ```sh
 spin -t -p counter_ex.pml
-# or
+# -l gives local variable values in trace
 spin -t -p -l counter_ex.pml
 ```
 
@@ -283,6 +283,7 @@ First, the standard LTL operators can be written in Promela straightforwardly as
 
 The way to add an LTL specification in a Promela program is simply by adding an `LTL invariant`.
 
+SPIN LTL formulas can reference program counter (e.g., `proc[0]@crit`) and local variables (using colons, e.g., `proc[0]:cnt`).
 
 Let's get back to the counter example and try to replace the `assert` with an LTL invariant.
 
