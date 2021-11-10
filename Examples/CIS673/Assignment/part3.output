@@ -1,0 +1,39 @@
+liangchengyu@susumus-Air Assignment % spin -run -f part3.pml
+warning: unknown warning option '-Wformat-overflow=0'; did you mean '-Wshift-overflow'? [-Wunknown-warning-option]
+1 warning generated.
+ltl invariant: ((([] (! (((process[0]@crit)) && ((process[1]@crit))))) && ([] (<> ((process[0]@crit))))) && ([] (<> ((process[1]@crit))))) && ([] (<> ((process[2]@crit))))
+warning: unknown warning option '-Wformat-overflow=0'; did you mean '-Wshift-overflow'? [-Wunknown-warning-option]
+1 warning generated.
+
+(Spin Version 6.5.1 -- 3 June 2021)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (invariant)
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness enabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 44 byte, depth reached 1184, errors: 0
+     6268 states, stored (18283 visited)
+    34320 states, matched
+    52603 transitions (= visited+matched)
+    47583 atomic steps
+hash conflicts:        24 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.430	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.482	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+    0.534	memory used for DFS stack (-m10000)
+  128.925	total actual memory usage
+
+
+unreached in proctype process
+	part3.pml:58, state 25, "-end-"
+	(1 of 25 states)
+unreached in claim invariant
+	_spin_nvr.tmp:23, state 31, "-end-"
+	(1 of 31 states)
+
+pan: elapsed time 0.01 seconds
